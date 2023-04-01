@@ -1,0 +1,124 @@
+.grid_container {
+    width: 100%;
+    height: 100vh;
+}
+
+.grid_gridWrapper {
+    background-color: rgb(43, 135, 209);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.grid_grid {
+    width: fit-content;
+    padding: 0.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.grid_row {
+    display: flex;
+}
+
+.grid_col {
+    cursor: pointer;
+    display: inline-block;
+    background-color: rgb(0, 0, 102);
+    opacity: 0.15;
+
+    width: 6.7rem;
+    height: 6.7rem;
+    margin: 0.4rem;
+    border-radius: 0.8rem;
+
+    transition:
+        transform 300ms ease-out 0s,
+        opacity 300ms ease-out 0s,
+        background 300ms ease-out 0s;
+}
+
+.click_phase .grid_col:active,
+.click_phase .grid_col:focus,
+.grid_col.grid_active {
+    background-color: white;
+    opacity: 0.95;
+    transition: none 0s ease 0s;
+}
+
+.grid_level {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 1.2rem 0;
+}
+
+.grid_levelSpan {
+    opacity: 0.6;
+}
+
+.grid_btn {
+    position: relative;
+    font-size: 1.6rem;
+    padding: 0.3rem 2.4rem;
+}
+
+.grid_startContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_start_img {
+    background-image: url('/memory_img.jpg');
+    background-size: cover;
+    object-fit: cover;
+    width: 320px;
+    height: 180px;
+    margin-bottom: 1.4rem;
+}
+
+.grid_start_h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+}
+
+.grid_start_h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+}
+
+.grid_start_btn {
+    font-size: 1.3rem;
+    padding: 0.4rem 2.4rem;
+    border-radius: 5px;
+}
+
+.grid_end_level_div {
+    font-size: 5rem;
+    margin-bottom: 1.4rem;
+    color: honeydew;
+}
+
+.grid_end_p {
+    font-size: 1.2rem;
+    color: honeydew;
+}
+
+.grid_a {
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    padding: 0.4rem 2.4rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: azure;
+    text-decoration: none;
+}
